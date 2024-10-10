@@ -1,0 +1,37 @@
+{
+  "name": "$PACKAGE",
+  "version": "$VERSION",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder --linux"
+  },
+  "keywords": [],
+  "author": "SZBT CI <lu1044100652@outlook.com>",
+  "homepage": "$HOMEPAGE",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^$ELECTRON_VERSION",
+    "electron-builder": "^25.1.7"
+  },
+  "build": {
+    "productName": "$PACKAGE",
+    "directories": {
+      "output": "out"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.png"
+    }
+  },
+  "title": "$NAME",
+  "title_cn": "$NAME_CN"
+}
